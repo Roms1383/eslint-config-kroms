@@ -4770,10 +4770,10 @@ semantic-release-gitmoji@^1.3.0:
     lodash.uniq "^4.5.0"
     node-emoji "^1.8.1"
 
-semantic-release-kroms@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/semantic-release-kroms/-/semantic-release-kroms-1.0.3.tgz#c0e0b6508e941f61cacd60d964619a58235f0283"
-  integrity sha512-iC85Q70zzHXssWlVyNzA5NRg1dJhpilNRxe4bIbNVIkkoW/cNOf+28QvRhso9/ewa4a+BB74J5u6ZfOv46fysA==
+semantic-release-kroms@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/semantic-release-kroms/-/semantic-release-kroms-1.0.9.tgz#bd96030bc605a833008200c821e001b5645ca709"
+  integrity sha512-aFTabaRVENRiKm4Hw46CEAEZdhCzpy6Ifh2rvMmRefNJJzLaW2E2v4DnZqZf/sSF2BaKGQUkzPCmzx1LTRo2lw==
 
 semantic-release@^15.13.12:
   version "15.13.12"
