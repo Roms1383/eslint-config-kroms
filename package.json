@@ -1,8 +1,9 @@
 {
   "name": "eslint-config-kroms",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "author": "Romain KELIFA <romain.kelifa@gmail.com>",
   "license": "MIT",
+  "description": "Custom preset for eslint",
   "main": "index.js",
   "files": [
     "index.js"
@@ -10,16 +11,12 @@
   "engines": {
     "node": "^6.14.0 || ^8.10.0 || >=9.10.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Roms1383/eslint-config-kroms.git"
-  },
+  "repository": "https://github.com/Roms1383/eslint-config-kroms.git",
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@semantic-release/github": "^5.2.10",
     "@semantic-release/npm": "^5.1.7",
-    "codacy-coverage": "^3.4.0",
-    "commitlint-config-kroms": "^1.1.0",
+    "commitlint-config-kroms": "^1.1.3",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.17.3",
@@ -28,13 +25,12 @@
     "eslint-plugin-standard": "^4.0.0",
     "generator-kroms": "^1.6.1",
     "husky": "^2.3.0",
-    "jest": "^24.8.0",
     "lint-staged": "^8.1.7",
     "remark-cli": "^6.0.1",
     "remark-preset-lint-recommended": "^3.0.2",
     "semantic-release": "^15.13.12",
     "semantic-release-gitmoji": "^1.3.0",
-    "semantic-release-kroms": "^1.0.11"
+    "semantic-release-kroms": "^1.1.3"
   },
   "peerDependencies": {
     "eslint": "^5.16.0",
@@ -46,8 +42,7 @@
   },
   "scripts": {
     "lint": "yarn eslint --config index.js '**/*.js' && yarn remark .",
-    "test": "echo 'you should write unit-tests' && exit 0",
-    "coverage": "cat ./coverage/lcov.info | codacy-coverage",
+    "test": "echo 'you should add unit-tests' && exit 0",
     "release": "yarn semantic-release"
   }
 }
