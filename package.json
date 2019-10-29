@@ -41,6 +41,8 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "scripts": {
+    "lint-js": "yarn eslint --config index.js '**/*.js'",
+    "lint-md": "yarn remark .",
     "lint": "yarn eslint --config index.js '**/*.js' && yarn remark .",
     "test": "echo 'you should add unit-tests' && exit 0",
     "release": "yarn semantic-release"
