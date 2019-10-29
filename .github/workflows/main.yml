@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: build
 on: [push]
 env:
   NPM: '6.12.0'
@@ -78,7 +78,7 @@ jobs:
           CI: true
   semantic-release:
     name: Semantic release
-    if: github.ref == 'refs/heads/actions'
+    if: github.ref == 'refs/heads/master'
     needs: [lint-js, lint-md, unit-test]
     runs-on: ubuntu-latest
     steps:
