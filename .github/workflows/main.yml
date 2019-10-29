@@ -46,7 +46,7 @@ jobs:
           npm i -g npm@$NPM
           curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN
           export PATH="$HOME/.yarn/bin:$PATH"
-      - name: Check documentation linting
+      - name: Lint documentation
         run: |
           yarn
           yarn lint-md
@@ -70,7 +70,7 @@ jobs:
           npm i -g npm@$NPM
           curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN
           export PATH="$HOME/.yarn/bin:$PATH"
-      - name: Lint documentation
+      - name: Test code
         run: |
           yarn
           yarn test
