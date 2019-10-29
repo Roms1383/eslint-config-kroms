@@ -4,8 +4,8 @@ env:
   NPM: '6.12.0'
   YARN: '1.19.1'
 jobs:
-  lint-js:
-    name: Lint JavaScript files
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -22,37 +22,13 @@ jobs:
           npm i -g npm@$NPM
           curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN
           export PATH="$HOME/.yarn/bin:$PATH"
-      - name: Lint code
+      - name: Lint files
         run: |
           yarn
-          yarn lint-js
+          yarn lint
         env:
           CI: true
-  lint-md:
-    name: Lint Markdown files
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v1
-      - name: Read .nvmrc
-        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
-        id: nvm
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: "${{ steps.nvm.outputs.NVMRC }}"
-      - name: Use NPM and Yarn
-        run: |
-          npm i -g npm@$NPM
-          curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN
-          export PATH="$HOME/.yarn/bin:$PATH"
-      - name: Lint documentation
-        run: |
-          yarn
-          yarn lint-md
-        env:
-          CI: true
-  unit-test:
+  test:
     name: Unit test
     runs-on: ubuntu-latest
     steps:
@@ -70,16 +46,16 @@ jobs:
           npm i -g npm@$NPM
           curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN
           export PATH="$HOME/.yarn/bin:$PATH"
-      - name: Test code
+      - name: Unit test
         run: |
           yarn
           yarn test
         env:
           CI: true
-  semantic-release:
+  release:
     name: Semantic release
     if: github.ref == 'refs/heads/master'
-    needs: [lint-js, lint-md, unit-test]
+    needs: [lint, test]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
