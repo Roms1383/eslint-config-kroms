@@ -1531,10 +1531,10 @@ commander@^8.2.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-8.2.0.tgz#37fe2bde301d87d47a53adeff8b5915db1381ca8"
   integrity sha512-LLKxDvHeL91/8MIyTAD5BFMNtoIwztGPMiM/7Bl8rIPmHCZXRxmSWr91h57dpOpnQ6jIUqEWdXE/uBYMfiVZDA==
 
-commitlint-config-kroms@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/commitlint-config-kroms/-/commitlint-config-kroms-2.0.3.tgz#f0f9b9c811ffc91401c983d0db63a9cdd2c2c08e"
-  integrity sha512-1panK/y0968y5pNiGG4ErmvhPmsfJ1rgbWpLB0Fv2PCR9zCT0AZ29q4jrC7zMAMvMoB98TVeg0Kjp8MyfzOJNQ==
+commitlint-config-kroms@^2.0.0:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/commitlint-config-kroms/-/commitlint-config-kroms-2.0.5.tgz#b642dcedfe6176549334e04c749dedb1086600c5"
+  integrity sha512-LR1+yTa5UA4k8JDNM9nvVYRhHcvi1fPGt7wx5fuixqlmM8HZEGB4pqWFDkzK4T6uI1VUyfFZ9XlexHPgX4WByw==
 
 common-ancestor-path@^1.0.1:
   version "1.0.1"
@@ -2074,11 +2074,6 @@ escape-string-regexp@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
-
-eslint-config-kroms@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-kroms/-/eslint-config-kroms-2.0.3.tgz#407fc1bb2b2eacb37b46bd795d3770b92d5dcec2"
-  integrity sha512-P8hafFi/VhSSjpBxvGUewHi8r9XOqcWVhhOxt783orPVq2LBWHeKYikhZHPEbA69/1tv+4uLIKcMfwcOe0IbaA==
 
 eslint-config-standard@^16.0.3:
   version "16.0.3"
@@ -3095,10 +3090,10 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^7.0.4:
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-7.0.4.tgz#242048245dc49c8fb1bf0cc7cfb98dd722531535"
-  integrity sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==
+husky@^8.0.0:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-8.0.1.tgz#511cb3e57de3e3190514ae49ed50f6bc3f50b3e9"
+  integrity sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==
 
 iconv-lite@^0.4.24:
   version "0.4.24"
@@ -6194,10 +6189,10 @@ semantic-release-gitmoji@^1.4.2:
     lodash.uniq "^4.5.0"
     node-emoji "^1.11.0"
 
-semantic-release-kroms@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/semantic-release-kroms/-/semantic-release-kroms-2.0.3.tgz#a25150cd75c29fffb0148553aff42c50d26781f8"
-  integrity sha512-ycQzR0qh4FTHWYsHt5tzg0wKdCNpN9Utmudt3sDFglWKBblkdt5nqgKKxv02ZbkAdD3s6N2eW68LR1dHPsHuTw==
+semantic-release-kroms@^2.0.0:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/semantic-release-kroms/-/semantic-release-kroms-2.0.4.tgz#0bc00e5b91e46aa2203a100f679a8bca312d7f52"
+  integrity sha512-0AV6H8NylI56o+623EN8zx37eICyJ+aMaYIOwOfNZFDNdmpgyMUJvG3VaRoot7CV+mzJ4qmeWjLnz/1F04Eo5w==
 
 semantic-release@^18.0.0:
   version "18.0.0"
